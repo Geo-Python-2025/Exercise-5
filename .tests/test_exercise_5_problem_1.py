@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 class TestProblem1:
-    @points(1.5, "Problem 1, Part 1: Variable 'Data' is not correctly defined!")
+    @points(0.5, "Problem 1, Part 1: Variable 'Data' is not correctly defined!")
     def test_problem_1_part_1_fuction(self, problem1):
         section_data, namespace = problem1
         section = "Part 1"  # Define the section key
@@ -19,7 +19,7 @@ class TestProblem1:
         # Assert that 'data' is a DataFrame
         assert isinstance(variables['data'], pd.DataFrame)
 
-    @points(1, "Problem 1, Part 2: Variable 'Data' length, columns or dtypes incorrectly defined!")
+    @points(0.5, "Problem 1, Part 2: Variable 'Data' length, columns or dtypes incorrectly defined!")
     def test_problem_1_part_2(self, problem1):
         section_data, namespace = problem1
         section = "Part 2"  # Define the section key
